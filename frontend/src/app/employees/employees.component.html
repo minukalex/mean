@@ -1,0 +1,9 @@
+<div>
+  <form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
+    <input type="hidden" name="_id"  #_id="ngModel" [(ngModel)]="employeService.selectedEmployee._id">
+    <input type="text" name="name" #name="ngModel" [(ngModel)]="employeService.selectedEmployee.name">
+    <input type="text" name="position" #position="ngModel" [(ngModel)]="employeService.selectedEmployee.position">
+    <input type="text" name="office" #office="ngModel" [(ngModel)]="employeService.selectedEmployee.office">
+    <input type="text" name="salary" #salary="ngModel" [(ngModel)]="employeService.selectedEmployee.salary">
+  </form>
+</div>
